@@ -1,38 +1,93 @@
 .App {
   text-align: center;
+  background-color: rgb(212, 254, 158);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  float: left;
+  width: 83%;
+  text-align: left;
+  border-radius: 10px;
+  background-color: bisque;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  width: 80%;
+  margin: 5px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+label {
+  font-weight: 700;
+}
+
+fieldset {
+  margin-top: 10px;
+  border: 3px solid black;
+}
+
+legend {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.background-image {
+  width: 100%;
+  z-index: -1;
+}
+
+.mortgage-container {
+  z-index: 1;
+}
+
+.calculator-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.input-container {
+  text-align: left;
+  padding: 10px;
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+.input-fields-container {
+  margin-bottom: 5px;
+}
+
+.results {
+  width: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .desktop {
+    z-index: 6;
+    width: 100%;
+    padding: 10px;
+    opacity: .95;
   }
-  to {
-    transform: rotate(360deg);
+
+  input{
+    font-size: 2rem;
   }
+
+  fieldset{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
 }
